@@ -9,7 +9,7 @@ Year = []
 n = 2
 for n in range(1,1270):
     try:
-        data = read_csv(str(n)+".csv")
+        data = read_csv("./data/"+str(n)+".csv")
         # converting column data to list
         Diameter =  Diameter + data['Diameter'].tolist()
         Weight = Weight + data['Weight'].tolist()
